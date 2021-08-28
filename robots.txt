@@ -1,0 +1,10 @@
+User-Agent: * 
+Disallow: /img/
+Disallow: /connected/
+Disallow: /content/
+Disallow: /css/
+Disallow: /essaie01/
+Disallow: /essaies/
+Disallow: /files_saves/
+Disallow: /test/
+Disallow: /cgi-bin/

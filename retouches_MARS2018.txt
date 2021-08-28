@@ -1,0 +1,47 @@
+----------------------------------------
+----------------------------------
+##fonction.php##
+----------------------------------
+----------------------------------------------
+~l273: $mysqli
+----------------------------------------
+----------------------------------
+##function.php##
+----------------------------------
+----------------------------------------------
+~l3(commentaire): executer la regexpr pour le seo   (|||		valable également pour: vente-en-ligne/function.php à ceci près qu'il faut rajouter un "/.." parceque il fichier se trouve dans un sous repertorie "/vente-en-ligne"	|||)
+~l192:$mysqli	(|||		valable également pour: vente-en-ligne/function.php 	|||)
+----------------------------------------
+----------------------------------
+##index.php##
+----------------------------------
+----------------------------------------------
+~l25:invocation fonction sql(x,....) x étant le nom de la bdd
+----------------------------------------
+----------------------------------
+##vente-en-ligne/index.php##
+----------------------------------
+----------------------------------------------
+~l36:$mysqli
+~l118:invocation fonction scriptsj(x) x étant (non-null et) le string du script javascript à wrapper dans une balise script 
+	(ici, je l'initialise à "" mais je ne sais plus à quoi il sert.......)
+----------------------------------------
+----------------------------------
+##vente-en-ligne/header.php##
+----------------------------------
+----------------------------------------------
+switch entre ~l43 et ~l8: déplacer l'instruction switch() juste avant le foreach qui echo le menu du header de vente-en-ligne
+	(ici, j'ai rajouté une instruction ifelse sur le switch afin que de 1, la valeur testé par le switch() existe toujours, et de 2 que sinon son output ($hover) soit émulé (par le else))
+----------------------------------------
+----------------------------------
+##vente-en-ligne/body.php##
+----------------------------------
+----------------------------------------------
+l41:varaible index:...... n'existent pas, j'ai mis l'instruction echo concernée en commentaire
+----------------------------------------
+----------------------------------
+##vente-en-ligne/bod.php##
+----------------------------------
+----------------------------------------------
+~l55: problemes sur l'attribut title, un acute gène l'attribut. Pour résoudre, j'ai appliqué un str_replace comme suit: str_replace("'","&acute;",$v['fr1']); 
+----------------------------------------

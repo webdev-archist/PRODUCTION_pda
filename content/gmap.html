@@ -1,0 +1,35 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>GRILLADE D'AFRIQUE-LE MARCORY</title>
+<link rel="stylesheet" type="text/css" href="jquery-ui-1.10.0.custom.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" language="javascript" src="jquery-1.9.0.min.js"></script>
+<script type="text/javascript" language="javascript" src="jquery.migrate.min.js"></script>
+<script type="text/javascript" language="javascript" src="jquery-ui-1.10.0.custom.min.js"></script>
+<script type="text/javascript" language="javascript" src="scripts.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&language=fr"></script>
+</head>
+<body>
+<div id="routeLeft"><div id="routePlan"><div id="routeMap"></div></div></div>
+<div id="routeRight"><div id="routeTxt">
+	<div id="close">X</div>
+	<input type="text" id="origin" value="Your address" />
+	<div class="clear"></div>
+	<div id="replanBtn">Replanifier!</div>
+	<div id="panel"></div>
+</div></div>
+<div id="dim"></div>
+<div id="routeBtn">Planifier votre route</div>
+<div id="map"></div>
+<script>
+	$(document).ready(function(){ 
+		// ===================================================================
+			$.map.initMap(18,5.35593,-3.9917,'400','300','Large','False','False','','Marker');
+		// ===================================================================
+	});
+</script>
+</body>
+</html>

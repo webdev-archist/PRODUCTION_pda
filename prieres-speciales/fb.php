@@ -1,0 +1,9 @@
+<?php			
+		switch($_GET['menu']){
+				case'objectifs':$hover=array('menu_hover','','','','');break;
+				case'vente':case'vente-en-ligne-publications':case'vente-en-ligne-objets-pieux':$hover=array('','menu_hover','','','');break;
+				case'priere':case'retraite-spirituelle':case'weekend-du-rosaire':case'location-espace':$hover=array('','','','menu_hover','');break;
+				case'lieux-activites':case'lieu-librairie':case'lieu-bolobi':case'lieu-fraternite':$hover=array('','','','','menu_hover');break;
+				case'enseignements':$hover=array('','','menu_hover','','');break;default:$hover=array('','','','','');break;
+		}
+?>

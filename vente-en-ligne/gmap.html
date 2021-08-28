@@ -1,0 +1,37 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>GRILLADE D'AFRIQUE-LE MARCORY</title>
+<link rel="stylesheet" type="text/css" href="GoogleMapV3/styles/jquery-ui-1.10.0.custom.css">
+<link rel="stylesheet" type="text/css" href="GoogleMapV3/styles/style.css">
+<script type="text/javascript" language="javascript" src="GoogleMapV3/scripts/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" language="javascript" src="GoogleMapV3/scripts/jquery.migrate.min.js"></script>
+<script type="text/javascript" language="javascript" src="GoogleMapV3/scripts/jquery-ui-1.10.0.custom.min.js"></script>
+<script type="text/javascript" language="javascript" src="GoogleMapV3/scripts/scripts.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&language=fr"></script>
+</head>
+<body>
+<div id="routeLeft"><div id="routePlan"><div id="routeMap"></div></div></div>
+<div id="routeRight"><div id="routeTxt">
+	<div id="close">X</div>
+	<input type="text" id="origin" value="Your address" />
+	<div class="clear"></div>
+	<div id="replanBtn">Replanifier!</div>
+	<div id="panel"></div>
+</div></div>
+<div id="dim"></div>
+<div id="routeBtn">Planifier votre route</div>
+<div id="map"></div>
+<div id="mapText"><div style=height:150px;white-space:nowrap;display:block;><div class=lineTit><strong>GRILLADE D'AFRIQUE-LE MARCORY</strong></div><div class=lineSep></div><div class=lineTxt>141, rue de Crimée</div><div class=lineTxt>75019&#160;PARIS</div><div class=lineTxt>France</div><div class=lineSep></div><div class=lineTxt><div style=float:left;width:20px;height:17px;line-height:17px;><img src=Phone.png border=0 style=margin-top:2px;></div> <div style=float:left;height:17px;line-height:17px; class=lineTxt>01 42 40 30 86</div><div class=clear></div></div><div class=lineTxt><div style=float:left;width:20px;height:17px;line-height:17px;><img src=Gsm.png border=0 style=margin-top:1px;></div> <div style=float:left;height:17px;line-height:17px; class=lineTxt>06 09 50 42 10</div><div class=clear></div></div><div class=lineTxt><div style=float:left;width:20px;height:17px;line-height:17px;><img src=Email.png border=0 style=margin-top:0px;></div> <div style=float:left;height:17px;line-height:17px; class=lineTxt><a href=mailto:grilladedafrique@yahoo.fr style=text-decoration:none;color:#000000;>grilladedafrique@yahoo.fr</a></div><div class=clear></div></div></div></div>
+<div id="destination">141, rue de Crimée, 75019, PARIS, France</div>
+<script>
+	$(document).ready(function(){ 
+		// ===================================================================
+			$.map.initMap(15,48.8869433,2.3809160,'400','300','Large','False','False','','Marker');
+		// ===================================================================
+	});
+</script>
+</body>
+</html>

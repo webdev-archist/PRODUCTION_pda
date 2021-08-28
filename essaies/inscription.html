@@ -1,0 +1,30 @@
+<div id='inscription' onmouseout="this.removeAttribute('class')" onmouseover="getClass(this,'see')">
+		<form action='index.php' method='post' onsubmit="if(this.inscription.value==''||(!this.NLenseignement.checked&&!this.meditation.checked&&!this.priere.checked&&!this.activite.checked)){alert('Veuillez remplir les informations d inscription à la newsletter svp !');return false;}">
+				<p>Si vous souhaitez vous inscrire à une de nos newsletters, veuillez entrer ci-dessous votre adresse email, puis cocher les newsletters auxquels vous souhaitez vous inscrire </p>
+				<fieldset><legend>Entrez votre adresse email</legend><input type='email' placeholder='email' name='inscription'/>
+				</fieldset>
+				<fieldset>
+						<input type='checkbox' name='pe' value='meditation'/><span>Pensées à méditer (quotidienne)</span>
+						<input type='checkbox' name='en' value='enseignement'/><span>Jésus enseigne (hebdomadaire)</span>
+						<input type='checkbox' name='pr' value='priere'/><span>Prières spéciales (mensuel)</span><br/>
+						<input type='checkbox' name='ac' value='actualité'/><span>Notre Actualité (mensuel)</span>
+						<!--<input type='checkbox' name='fin' value='fin'/><span>Fin des temps (mensuelle)</span>-->
+				</fieldset>
+				<input type='submit' value='Valider inscription newsletter'/>
+		</form>
+		<hr/>
+		<p>
+				Pour toutes les personnes en butte à la maladie, aux maléfices sous toutes ses formes, à la sorcellerie ou aux mauvais sorts, nous avons un groupe d'intercession.<br/>
+				L'intercession peut se faire à distance. Mais en cas de nécessité, la présence physique pourrait être nécessaire.<br/>
+				<ul>
+				<li>Vous pouvez soit nous joindre par téléphone au : 47-81-10-92</li>
+				<li>Soit par email : puissancedamour@yahoo.fr</li>
+				<li>Soit par courrier physique à : 08 BP111 Abidjan 08 Côte d'Ivoire </li>
+				</ul>
+				Soit nous présenter votre situation ci-après : 
+				<form action='index.php' method='post'>
+						<textarea cols='100' rows='10' name='situation'></textarea><br/>
+						<input type='submit' value="Envoyer demande d'intercession"/>
+				</form>
+		</p>
+</div>
